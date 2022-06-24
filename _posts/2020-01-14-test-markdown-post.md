@@ -47,7 +47,7 @@ And a numbered list:
 
 ## Images
 
-![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
+![]({{ site.baseurl }}/images/requirements.drawio.png "modellierte Requirements")
 
 ## Code
 
