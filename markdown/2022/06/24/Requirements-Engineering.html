@@ -4,22 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Portfolio Softwareentwicklung 2 | Master Data Science FH Kufstein; Modul: Softwareentwicklung 2; Portfolio</title>
+<title>Modellierte Anforderungen (Requirements) | Portfolio Softwareentwicklung 2</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Portfolio Softwareentwicklung 2" />
+<meta property="og:title" content="Modellierte Anforderungen (Requirements)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Master Data Science FH Kufstein; Modul: Softwareentwicklung 2; Portfolio" />
-<meta property="og:description" content="Master Data Science FH Kufstein; Modul: Softwareentwicklung 2; Portfolio" />
-<link rel="canonical" href="https://n1klas96.github.io/SE_2_Portfolio/" />
-<meta property="og:url" content="https://n1klas96.github.io/SE_2_Portfolio/" />
+<meta name="description" content="Requirements Engineering" />
+<meta property="og:description" content="Requirements Engineering" />
+<link rel="canonical" href="https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/Requirements-Engineering.html" />
+<meta property="og:url" content="https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/Requirements-Engineering.html" />
 <meta property="og:site_name" content="Portfolio Softwareentwicklung 2" />
-<meta property="og:image" content="https://n1klas96.github.io/SE_2_Portfolio/images/logo.png" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://n1klas96.github.io/SE_2_Portfolio/images/logo.png" />
-<meta property="twitter:title" content="Portfolio Softwareentwicklung 2" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-24T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Modellierte Anforderungen (Requirements)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Master Data Science FH Kufstein; Modul: Softwareentwicklung 2; Portfolio","headline":"Portfolio Softwareentwicklung 2","image":"https://n1klas96.github.io/SE_2_Portfolio/images/logo.png","name":"Portfolio Softwareentwicklung 2","url":"https://n1klas96.github.io/SE_2_Portfolio/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-24T00:00:00-05:00","datePublished":"2022-06-24T00:00:00-05:00","description":"Requirements Engineering","headline":"Modellierte Anforderungen (Requirements)","mainEntityOfPage":{"@type":"WebPage","@id":"https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/Requirements-Engineering.html"},"url":"https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/Requirements-Engineering.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/SE_2_Portfolio/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://n1klas96.github.io/SE_2_Portfolio/feed.xml" title="Portfolio Softwareentwicklung 2" /><link rel="shortcut icon" type="image/x-icon" href="/SE_2_Portfolio/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,63 +70,48 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>Diese Seite wurde mit <a href="https://github.com/fastai/fastpages">fastpages</a> aufgebaut und als Vorlage benutzt.</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<h1 id="zusammenfassung">Zusammenfassung:</h1>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Modellierte Anforderungen (Requirements)</h1><p class="page-description">Requirements Engineering</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-24T00:00:00-05:00" itemprop="datePublished">
+        Jun 24, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
-<p>Die generelle Idee unserer Projektgruppe “Frunch Infinity” ist es, eine Schnittstelle zu erstellen, auf der einerseits ein
-Datensatz auswählbar ist und im Anschluss durch klick auf einen Action-Button der Output mehrerer statistischer Modelle 
-erstellt und verglichen werden kann.
-Inhaltlich betrachtet implementieren wir einen automatisierten ML-Prozess. Der entsprechende Rohdatensatz wird einer Preprocessing-
-Pipeline bereinigt und im Amschluß mithilfe des Python Package PyCaret trainiert. Durch PyCaret bietet sich die Möglichkeit den Output mehrerer Modell
-und dessen Metriken miteinander zu vergleichen. Der entsprechende Output wird auf Streamlit publiziert. Darüber hinaus besteht innerhalb des Streamlit-Dashboards
-die Möglichkeit, den Datensatz erneut zu trainieren.
-Da das Projekt vorerst einen MVP-Ansatz verfolgt, liegt der Fokus auf dem Turbofan-Datensatz, sowie dem Training und der Auswertung von 
-Regressions-Modellen.
-Die größte Herausforderung für mich war es, allgemein ein Softwareentwicklungs-Projekt aufzusetzen.
-Da ich in der Vergangenheit kaum Berührungspunkte mit Softwareentwicklung bzw. CI/CD, Projekt-Templates (Cookiecutter etc.), 
-Testing und Techniken wie Refactoring oder Design Patterns hatte, war sämtlicher Input über Tools und Techniken neu für mich.
-Ich habe das Gefühl viele oberflächliche Informationen über die Vorgehensweise in der Durchführung eines Softwareentwicklungsprojekt gesammelt zuhaben.
-Um Tools wie beispielsweise Docker-Container umfänglich zu verstehen, fehlte allerdings die Zeit.</p>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/SE_2_Portfolio/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
 
-<h1 id="portfolio-inhaltsverzeichnis">Portfolio Inhaltsverzeichnis:</h1>
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#modellierte-requirements-von-frunch-infinity">Modellierte Requirements von Frunch Infinity</a></li>
+<li class="toc-entry toc-h2"><a href="#veränderung-der-requirements-im-projektverlauf">Veränderung der Requirements im Projektverlauf</a></li>
+</ul><h2 id="modellierte-requirements-von-frunch-infinity">
+<a class="anchor" href="#modellierte-requirements-von-frunch-infinity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modellierte Requirements von Frunch Infinity</h2>
+<hr>
+<p><img src="/SE_2_Portfolio/images/requirements.drawio.png" alt="" title="modellierte Requirements"></p>
+
+<h2 id="veränderung-der-requirements-im-projektverlauf">
+<a class="anchor" href="#ver%C3%A4nderung-der-requirements-im-projektverlauf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Veränderung der Requirements im Projektverlauf</h2>
+
+<p>You can format text and code per usual</p>
 
 
+  </div><a class="u-url" href="/SE_2_Portfolio/markdown/2022/06/24/Requirements-Engineering.html" hidden></a>
+</article>
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/SE_2_Portfolio/markdown/2022/06/24/Requirements-Engineering.html">
-    Modellierte Anforderungen (Requirements)
-    </a>
-</h3><p class="post-meta-description">Requirements Engineering</p><p class="post-meta">Jun 24, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/SE_2_Portfolio/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/SE_2_Portfolio/markdown/2020/01/14/test-markdown-post.html">
-    Modellierte Anforderungen (Requirements)
-    </a>
-</h3><p class="post-meta-description">Requirements Engineering</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/SE_2_Portfolio/"></data>
