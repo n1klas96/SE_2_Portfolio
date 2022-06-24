@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Requirements Engineering
+description: Data Science Methodik-Konzept
 categories: [markdown]
-title: Modellierte Anforderungen (Requirements)
+title: Data Science Methodik-Konzept - Beschreibung
 ---
 # Example Markdown Post
 
