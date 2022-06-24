@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Systemansprache
 categories: [markdown]
-title: Web-Technologien
+title: Web - Technologien
 ---
 ## Modellierte Requirements von Frunch Infinity
 ---
