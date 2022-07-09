@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -96,35 +96,80 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#modellierte-requirements-von-frunch-infinity">Modellierte Requirements von Frunch Infinity</a></li>
-<li class="toc-entry toc-h2"><a href="#veränderung-der-requirements-im-projektverlauf">Veränderung der Requirements im Projektverlauf</a></li>
-</ul><h2 id="modellierte-requirements-von-frunch-infinity">
-<a class="anchor" href="#modellierte-requirements-von-frunch-infinity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modellierte Requirements von Frunch Infinity</h2>
-<hr>
-<p><img src="/SE_2_Portfolio/images/requirements.drawio.png" alt="" title="modellierte Requirements"></p>
-
-<h2 id="veränderung-der-requirements-im-projektverlauf">
-<a class="anchor" href="#ver%C3%A4nderung-der-requirements-im-projektverlauf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Veränderung der Requirements im Projektverlauf</h2>
-
-<p>In Stage 1 unseres Projektes haben wir die Requirements nach den Sophisten Regeln grundlegend festgelegt und auf Basis jener
-wurden die ersten, erforderlichen Entwicklungsschritte durchgeführt:</p>
-
+<li class="toc-entry toc-h2"><a href="#web-technologien-von-frunch-infinity">Web-Technologien von Frunch Infinity</a>
 <ul>
-  <li>erstellung eines dev-containers</li>
-  <li>Aufbau einer preprocessing Pipeline</li>
-  <li>Aufbau einer CI/CD Pipeline</li>
-  <li>Unit-Tests für Pipelines</li>
-  <li>erste Version der Streamlit Applikation</li>
-  <li>Modellentwicklung mit PyCaret</li>
+<li class="toc-entry toc-h3"><a href="#streamlit">Streamlit</a></li>
+<li class="toc-entry toc-h3"><a href="#sql-alchemy-data-warehouse">SQL-Alchemy (Data Warehouse)</a></li>
+<li class="toc-entry toc-h3"><a href="#pycaret">PyCaret</a></li>
+<li class="toc-entry toc-h3"><a href="#poetry">Poetry</a></li>
+<li class="toc-entry toc-h3"><a href="#hydra">Hydra</a></li>
+<li class="toc-entry toc-h3"><a href="#cookiecutter">Cookiecutter</a></li>
+<li class="toc-entry toc-h3"><a href="#comit-control">Comit Control</a></li>
+<li class="toc-entry toc-h3"><a href="#docker-container">Docker Container</a></li>
+<li class="toc-entry toc-h3"><a href="#logging">Logging</a></li>
+<li class="toc-entry toc-h3"><a href="#unittest">Unittest</a></li>
+<li class="toc-entry toc-h3"><a href="#pdoc">Pdoc</a></li>
 </ul>
+</li>
+</ul><h2 id="web-technologien-von-frunch-infinity">
+<a class="anchor" href="#web-technologien-von-frunch-infinity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web-Technologien von Frunch Infinity</h2>
+<hr>
 
-<p>Nachdem die ersten Entwicklungsschritte von Stage 1 abgeschlossen waren, haben wir in unserem Sprint-Review einen neuen Requirement-Zyklus eingeleitet
-und die einzelnen Requirements neu priorisiert.
-Zunächst hat sich gezeigt das das Requirement: “Wenn der Turbofan-Datensatz in die Streamlit-Applikation importiert wurde, muss die Applikation
-alle Variablen und Werte des Datensatzes erkennen” nach unseren ersten Entwicklungserkenntnissen nicht ganz passend für unsere MVP-Software einer Auto-ML ist. Der Import von einem oder verschiedenen Datensätzen erschwert die Entwicklung eines ersten, funktionierenden Produkts enorm.
-Die Wichtigkeit unserer Requirements wurde also in diesem Zyklus angepasst auf zunächst einen Datensatz (Turbofan) und Regressions-Algorithmen priorisiert.</p>
+<h3 id="streamlit">
+<a class="anchor" href="#streamlit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Streamlit</h3>
 
-<p>Nach jedem größeren Entwicklungsschritt bzw. in jedem Sprint-Review sollten die aufgestellten Requirements auf konsistenz und Vollständigkeit geprüft werden, da auf Veränderungen innerhalb der Requirements nur angemessen reagiert werden kann, wenn diese bekannt sind.</p>
+<p>Die Ergebnisse des Projekts bzw. des Auto-ML-Prozesses werden innerhalb einer Streamlit Applikation visualisiert. Diese wird wiederrum von Streamlit Cloud 
+gehostet und ist somit öffentlich zugänglich. Durch Streamlit ist es einerseits sehr schnell möglich Ergebnisse anschaulich dazustellen, aber auch sie in einem relativ leichten Prozess durch GitHub und Streamlit Cloud zu deployen.</p>
+
+<h3 id="sql-alchemy-data-warehouse">
+<a class="anchor" href="#sql-alchemy-data-warehouse" aria-hidden="true"><span class="octicon octicon-link"></span></a>SQL-Alchemy (Data Warehouse)</h3>
+
+<p>Durch SQL-Alchemy stellen wir unserem System ein Data Warehouse bereit, in dem einerseits die Trainingsergebnisse unseres Modells abgespeichert und dementsprechend auch abgefragt werden können. Zudem wird das Target Feature, welches in der Streamlit-Applikation auswählbar ist, ebenfalls im Data Warehouse abgelegt.</p>
+
+<h3 id="pycaret">
+<a class="anchor" href="#pycaret" aria-hidden="true"><span class="octicon octicon-link"></span></a>PyCaret</h3>
+
+<p>Durch die Hilfe von PyCaret werden insgesamt 17 verschiedene Modelle trainiert und im Anschluss mit Hilfe verschiedener Metriken verglichen. Der ausgegebene Data Frame wir nach Beendigung des Trainings in der Streamlit App dargestellt</p>
+
+<h3 id="poetry">
+<a class="anchor" href="#poetry" aria-hidden="true"><span class="octicon octicon-link"></span></a>Poetry</h3>
+
+<p>Innerhalb der Projektorganisation nutzen das Package Management System von Poetry. Innerhalb des poetry.lock files werden sämtliche Paket Requirements gelistet. Durch Poetry arbeiten alle Entwickler auf den gleichen Versionsebenen der verschiedenen Pakete.</p>
+
+<h3 id="hydra">
+<a class="anchor" href="#hydra" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hydra</h3>
+
+<p>Als Pfad-Management-Tool verwenden wir das Framework von Hydra. Durch Hydra ist es möglich beispielsweise den Daten-Pfad einmal zentral in config (main.yaml) festzulegen und diesen Ort durch den decorator von hydra überall anzusprechen. Sollte sich der Ort irgendwann ändern, kann dies zentral an einem Ort erfolgen</p>
+
+<h3 id="cookiecutter">
+<a class="anchor" href="#cookiecutter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cookiecutter</h3>
+
+<p>Für die Organisation und die Strukturierung des Projekt Repositorys haben ein Template von Cookiecutter verwendet. Auch wenn nicht alle Vorlagen des Templates verwendet wurden, hat dies bei der Übersichtlichkeit des Projekts geholfen</p>
+
+<h3 id="comit-control">
+<a class="anchor" href="#comit-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comit Control</h3>
+
+<p>Durch die .pre-commit-config-yaml werden in einige Richtlinien für den Abschluss eines Commits festgelegt. Ein Beispiel für eine solche Richtlinie ist beispielsweise isort zu nennen. Hierbei werden die Imports automatisch in sinnvoller Reihenfolge und alphabetisch sortiert.</p>
+
+<h3 id="docker-container">
+<a class="anchor" href="#docker-container" aria-hidden="true"><span class="octicon octicon-link"></span></a>Docker Container</h3>
+
+<p>Docker Container werden innerhalb des Projektes einerseits für dev-dependencies, die Entwicklung in virtuellen Umgebungen und den Aufbau des Frontends verwendet</p>
+
+<h3 id="logging">
+<a class="anchor" href="#logging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logging</h3>
+
+<p>In einem .log file werden sämtliche Prozesse die in der Ausgabe beispielsweise beim Modell-Training oder im Preprocessing mitlaufen abgespeichert. Dies ist insbesondere für Debugging essentiell.</p>
+
+<h3 id="unittest">
+<a class="anchor" href="#unittest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unittest</h3>
+
+<p>Es gibt verschiedene Unit-Tests im Projekt. Das Framework testet dabei unter anderem innerhalb der Preprocessing-Pipeline auf die korrekte shape der Daten, ob die entsprechenden Variablen entfernt wurden und der Pfad stimmt. Zudem gibt es einen Test, ob die Streamlit-Applikation aufrufbar ist. Durch die Unit- tests wird das gesamte System robuster und vereinfacht darüber hinaus das Debugging.</p>
+
+<h3 id="pdoc">
+<a class="anchor" href="#pdoc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pdoc</h3>
+
+<p>Durch die Software von Pdoc ist es innerhalb des Projekts möglich, sämtliche Docstrings in einer html-Datei zusammenzufassen und dementsprechend wichtige  Informationen zu dokumentieren.</p>
 
 
   </div><a class="u-url" href="/SE_2_Portfolio/markdown/2022/06/24/04web-technologien.html" hidden></a>
