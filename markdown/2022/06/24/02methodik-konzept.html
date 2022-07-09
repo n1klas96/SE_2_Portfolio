@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -141,6 +141,8 @@ Der Data Frame beinhaltet eine Auflistung der unterschiedlichen Modelle, dem ent
 
 <h2 id="deployment">
 <a class="anchor" href="#deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployment</h2>
+
+<p>Die Applikation wird mit Streamlit Cloud deployed, da mithilfe dieses Dienstes der Veröffentlichungsprozess recht einfach umsetzbar ist. Um die Applikation public zu machen, wird ledigleich ein GitHub-Repository mit den selben Inhalten wie in GitLab Repository benötigt. Im Anschluss kann direkt über die lokale Streamlit-App die build-in Funktion “deploy app” verwendet werden. Nachdem man dort den entsprechenden GitHub-Account und Repository angegeben hat, wird die Applikation automatisch deployed. Hierbei kann es zu Problemen kommen, wenn die App die von Streamlit breitgestellten Ressourcen übertrifft. Dieses Problem kann innerhalb von Streamlit mit der cache()-Funktion (decorator) in der entsprechenden ui.py gelöst werden.</p>
 
   </div><a class="u-url" href="/SE_2_Portfolio/markdown/2022/06/24/02methodik-konzept.html" hidden></a>
 </article>
