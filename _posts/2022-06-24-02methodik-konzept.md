@@ -36,3 +36,5 @@ Nachdem das Modell-Training beendet ist, wird durch die .pull() Funktion ein Dat
 Der Data Frame beinhaltet eine Auflistung der unterschiedlichen Modelle, dem entsprechenden MAE, MSE, RMSE, R^2, RMSLE, MAPE und die verstrichene Trainingstzeit. Anhand dieser Metriken kann jedes Modell evaluiert werden
 
 ## Deployment
+
+Die Applikation wird mit Streamlit Cloud deployed, da mithilfe dieses Dienstes der Veröffentlichungsprozess recht einfach umsetzbar ist. Um die Applikation public zu machen, wird ledigleich ein GitHub-Repository mit den selben Inhalten wie in GitLab Repository benötigt. Im Anschluss kann direkt über die lokale Streamlit-App die build-in Funktion "deploy app" verwendet werden. Nachdem man dort den entsprechenden GitHub-Account und Repository angegeben hat, wird die Applikation automatisch deployed. Hierbei kann es zu Problemen kommen, wenn die App die von Streamlit breitgestellten Ressourcen übertrifft. Dieses Problem kann innerhalb von Streamlit mit der cache()-Funktion (decorator) in der entsprechenden ui.py gelöst werden.
