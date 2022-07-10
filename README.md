@@ -14,9 +14,11 @@ Durch den oben angegebenen Link gelangen Sie auf die entsprechenden Inhalte. Als
 
 ## Inhalte 
 
-- [Requirements Engineering](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-01requirements.md)
+- [Requirements Engineering](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-01requirements-engineering.md)
 
 - [Data Science Methodik - Konzept](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-02methodik-konzept.md)
+
+- [Web-Technologien](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-04web-technologien.md)
 
 
 Note: you may want to remove example blog posts from the `_posts`,  `_notebooks` or `_word` folders (but leave them empty, don't delete these folders) if you don't want these blog posts to appear on your site.
