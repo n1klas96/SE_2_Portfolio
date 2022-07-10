@@ -6,19 +6,16 @@
 
 https://n1klas96.github.io/SE_2_Portfolio/
 
-# My Blog
+# Softwareentwicklung 2 ILV: Portfolio des Projekts Frunch Infinity
+
+In diesem Repository werden Inhalte zwischen der Lehrveranstaltung Softwareentwicklung 2 (ILV) und einem Sofwareentwicklungsprojekt (Frunch Infinity) miteinander verknüpft.
+Durch den oben angegebenen Link gelangen Sie auf die entsprechenden Inhalte. Als Vorlage wurde das Repositoyr von FastPages genutzt.
 
 
-_powered by [fastpages](https://github.com/fastai/fastpages)_
+## Inhalte 
 
-
-## What To Do Next?
-
-Great!  You have setup your repo.  Now its time to start writing content.  Some helpful links:
-
-- [Writing Blogs With Jupyter](https://github.com/fastai/fastpages#writing-blog-posts-with-jupyter)
-
-- [Writing Blogs With Markdown](https://github.com/fastai/fastpages#writing-blog-posts-with-markdown)
+- [Writing Blogs With Markdown](https://github.com/n1klas96/SE_2_Portfolio
+writing-blog-posts-with-markdown)
 
 - [Writing Blog Posts With Word](https://github.com/fastai/fastpages#writing-blog-posts-with-microsoft-word)
 
