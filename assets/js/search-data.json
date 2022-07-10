@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Architektur",
-            "content": "Modellierte Requirements von Frunch Infinity . .",
+            "content": "Projekt-Architektur . . Monolitische Architekur . Innerhalb des Projekts Frunch Infinity wird größtenteils eine monolytische Architektur verwendet. Prinzipiell ist das System mit diversen Komponenten, wie beispielsweise der processing.py, model.py und ui.py miteinander verbunden, voneinander abhängig und nicht, wie in modularen Systemen, lose gekoppelt. Der Vorteil modularer Systeme im Gegensatz zu einem Monolithen ist, dass einzelne Module losgelöst voneinander verändert werden können. Dies ist in unserem System nicht vollumfänglich möglich. Einige Komponenten wie beispielsweise model.py, erwarten eine bestimmte Vorverarbeitung der Pipeline aus pipeline.py. Werden hier grundlegende Änderungen vorgenomme, müsste model.py ebenfalls angepasst werden. Trotzdem hat auch die monolitische Architektur wichtige Vorteil gegenüber einem modularen Aufbau bzw. Microservices. Durch eine monolitische Architektur ist es möglich die Software leichter zu testen, als auch zu debuggen. . Dokumentation des Systems . Die Dokumentation wurde mithilfe von Pdoc erstellt. Dabei werden sämtliche Docstring, welche in den verschiedenen Skripten verwendet wurden, zu einer HTML-Datei zusammengefügt und über GitLab Pages bereitgestellt. .",
             "url": "https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/05architektur.html",
             "relUrl": "/markdown/2022/06/24/05architektur.html",
             "date": " • Jun 24, 2022"
