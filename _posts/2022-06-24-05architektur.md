@@ -7,7 +7,7 @@ title: Architektur
 ---
 ## Projekt-Architektur 
 ---
-### Monolitische Architekur
+### Monolitische Architektur
 
 Innerhalb des Projekts Frunch Infinity wird größtenteils eine monolytische Architektur verwendet. Prinzipiell ist das System mit diversen Komponenten, wie beispielsweise der processing.py, model.py und ui.py miteinander verbunden, voneinander abhängig und nicht, wie in modularen Systemen, lose gekoppelt.
 Der Vorteil modularer Systeme im Gegensatz zu einem Monolithen ist, dass einzelne Module losgelöst voneinander verändert werden können. Dies ist in unserem System nicht vollumfänglich möglich. Einige Komponenten wie beispielsweise model.py, erwarten eine bestimmte Vorverarbeitung der Pipeline aus pipeline.py. Werden hier grundlegende Änderungen vorgenomme, müsste model.py ebenfalls angepasst werden. 
