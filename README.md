@@ -20,6 +20,11 @@ Durch den oben angegebenen Link gelangen Sie auf die entsprechenden Inhalte. Als
 
 - [Web-Technologien](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-04web-technologien.md)
 
+- [Architektur](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-05architektur.md)
+
+- [Design + Data Science Architektur](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-06design.md)
+
+- [Diagramme](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-07diagramme.md)
 
 Note: you may want to remove example blog posts from the `_posts`,  `_notebooks` or `_word` folders (but leave them empty, don't delete these folders) if you don't want these blog posts to appear on your site.
 
