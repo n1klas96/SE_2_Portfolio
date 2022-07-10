@@ -14,12 +14,10 @@ Durch den oben angegebenen Link gelangen Sie auf die entsprechenden Inhalte. Als
 
 ## Inhalte 
 
-- [Writing Blogs With Markdown](https://github.com/n1klas96/SE_2_Portfolio
-writing-blog-posts-with-markdown)
+- [Requirements Engineering](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-01requirements.md)
 
-- [Writing Blog Posts With Word](https://github.com/fastai/fastpages#writing-blog-posts-with-microsoft-word)
+- [Data Science Methodik - Konzept](https://github.com/n1klas96/SE_2_Portfolio/blob/master/_posts/2022-06-24-02methodik-konzept.md)
 
-- [(Optional) Preview Your Blog Locally](_fastpages_docs/DEVELOPMENT.md)
 
 Note: you may want to remove example blog posts from the `_posts`,  `_notebooks` or `_word` folders (but leave them empty, don't delete these folders) if you don't want these blog posts to appear on your site.
 
