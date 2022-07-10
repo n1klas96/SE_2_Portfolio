@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Design und Data Science Architektur" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Design Patterns , Refactoring" />
-<meta property="og:description" content="Design Patterns , Refactoring" />
+<meta name="description" content="Refactoring" />
+<meta property="og:description" content="Refactoring" />
 <link rel="canonical" href="https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/06design.html" />
 <meta property="og:url" content="https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/06design.html" />
 <meta property="og:site_name" content="Portfolio Softwareentwicklung 2" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Design und Data Science Architektur" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-24T00:00:00-05:00","datePublished":"2022-06-24T00:00:00-05:00","description":"Design Patterns , Refactoring","headline":"Design und Data Science Architektur","mainEntityOfPage":{"@type":"WebPage","@id":"https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/06design.html"},"url":"https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/06design.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-24T00:00:00-05:00","datePublished":"2022-06-24T00:00:00-05:00","description":"Refactoring","headline":"Design und Data Science Architektur","mainEntityOfPage":{"@type":"WebPage","@id":"https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/06design.html"},"url":"https://n1klas96.github.io/SE_2_Portfolio/markdown/2022/06/24/06design.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/SE_2_Portfolio/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://n1klas96.github.io/SE_2_Portfolio/feed.xml" title="Portfolio Softwareentwicklung 2" /><link rel="shortcut icon" type="image/x-icon" href="/SE_2_Portfolio/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Design und Data Science Architektur</h1><p class="page-description">Design Patterns , Refactoring</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-24T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Design und Data Science Architektur</h1><p class="page-description">Refactoring</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-24T00:00:00-05:00" itemprop="datePublished">
         Jun 24, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -96,36 +96,25 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#modellierte-requirements-von-frunch-infinity">Modellierte Requirements von Frunch Infinity</a></li>
-<li class="toc-entry toc-h2"><a href="#veränderung-der-requirements-im-projektverlauf">Veränderung der Requirements im Projektverlauf</a></li>
-</ul><h2 id="modellierte-requirements-von-frunch-infinity">
-<a class="anchor" href="#modellierte-requirements-von-frunch-infinity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modellierte Requirements von Frunch Infinity</h2>
-<hr>
-<p><img src="/SE_2_Portfolio/images/requirements.drawio.png" alt="" title="modellierte Requirements"></p>
-
-<h2 id="veränderung-der-requirements-im-projektverlauf">
-<a class="anchor" href="#ver%C3%A4nderung-der-requirements-im-projektverlauf" aria-hidden="true"><span class="octicon octicon-link"></span></a>Veränderung der Requirements im Projektverlauf</h2>
-
-<p>In Stage 1 unseres Projektes haben wir die Requirements nach den Sophisten Regeln grundlegend festgelegt und auf Basis jener
-wurden die ersten, erforderlichen Entwicklungsschritte durchgeführt:</p>
-
+<li class="toc-entry toc-h2"><a href="#design-und-data-science-architektur">Design und Data Science Architektur</a>
 <ul>
-  <li>erstellung eines dev-containers</li>
-  <li>Aufbau einer preprocessing Pipeline</li>
-  <li>Aufbau einer CI/CD Pipeline</li>
-  <li>Unit-Tests für Pipelines</li>
-  <li>erste Version der Streamlit Applikation</li>
-  <li>Modellentwicklung mit PyCaret</li>
+<li class="toc-entry toc-h3"><a href="#design-refactoring">Design (Refactoring)</a></li>
+<li class="toc-entry toc-h3"><a href="#data-science-architektur">Data Science Architektur</a></li>
 </ul>
+</li>
+</ul><h2 id="design-und-data-science-architektur">
+<a class="anchor" href="#design-und-data-science-architektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design und Data Science Architektur</h2>
+<hr>
 
-<p>Nachdem die ersten Entwicklungsschritte von Stage 1 abgeschlossen waren, haben wir in unserem Sprint-Review einen neuen Requirement-Zyklus eingeleitet
-und die einzelnen Requirements neu priorisiert.
-Zunächst hat sich gezeigt das das Requirement: “Wenn der Turbofan-Datensatz in die Streamlit-Applikation importiert wurde, muss die Applikation
-alle Variablen und Werte des Datensatzes erkennen” nach unseren ersten Entwicklungserkenntnissen nicht ganz passend für unsere MVP-Software einer Auto-ML ist. Der Import von einem oder verschiedenen Datensätzen erschwert die Entwicklung eines ersten, funktionierenden Produkts enorm.
-Die Wichtigkeit unserer Requirements wurde also in diesem Zyklus angepasst auf zunächst einen Datensatz (Turbofan) und Regressions-Algorithmen priorisiert.</p>
+<h3 id="design-refactoring">
+<a class="anchor" href="#design-refactoring" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design (Refactoring)</h3>
 
-<p>Nach jedem größeren Entwicklungsschritt bzw. in jedem Sprint-Review sollten die aufgestellten Requirements auf konsistenz und Vollständigkeit geprüft werden, da auf Veränderungen innerhalb der Requirements nur angemessen reagiert werden kann, wenn diese bekannt sind.</p>
+<p>Um den Code übersichtlicher zu machen und zu verbessern, wurde innerhalb des Projekts ein Refactoring-Prozess verwendet. Der Code wurde dabei in Funktionen und Dateien aufgeteilt. Das Resultat des Refactoring ist, dass der Code einerseits besser testbar und andererseits konfigurabel gemacht wurde.</p>
 
+<h3 id="data-science-architektur">
+<a class="anchor" href="#data-science-architektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Science Architektur</h3>
+
+<p><img src="/SE_2_Portfolio/images/requirements.drawio.png" alt="" title="modellierte Requirements"></p>
 
   </div><a class="u-url" href="/SE_2_Portfolio/markdown/2022/06/24/06design.html" hidden></a>
 </article>
