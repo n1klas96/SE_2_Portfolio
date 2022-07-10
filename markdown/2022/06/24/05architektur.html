@@ -96,23 +96,26 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#projekt-architektur">Projekt-Architektur</a></li>
-<li class="toc-entry toc-h2"><a href="#monolitische-architekur">Monolitische Architekur</a></li>
-<li class="toc-entry toc-h2"><a href="#dokumentation-des-systems">Dokumentation des Systems</a></li>
-</ul><h3 id="projekt-architektur">
-<a class="anchor" href="#projekt-architektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projekt-Architektur</h3>
+<li class="toc-entry toc-h2"><a href="#projekt-architektur">Projekt-Architektur</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#monolitische-architekur">Monolitische Architekur</a></li>
+<li class="toc-entry toc-h3"><a href="#dokumentation-des-systems">Dokumentation des Systems</a></li>
+</ul>
+</li>
+</ul><h2 id="projekt-architektur">
+<a class="anchor" href="#projekt-architektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projekt-Architektur</h2>
 <hr>
-<h2 id="monolitische-architekur">
-<a class="anchor" href="#monolitische-architekur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monolitische Architekur</h2>
+<h3 id="monolitische-architekur">
+<a class="anchor" href="#monolitische-architekur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monolitische Architekur</h3>
 
 <p>Innerhalb des Projekts Frunch Infinity wird größtenteils eine monolytische Architektur verwendet. Prinzipiell ist das System mit diversen Komponenten, wie beispielsweise der processing.py, model.py und ui.py miteinander verbunden, voneinander abhängig und nicht, wie in modularen Systemen, lose gekoppelt.
 Der Vorteil modularer Systeme im Gegensatz zu einem Monolithen ist, dass einzelne Module losgelöst voneinander verändert werden können. Dies ist in unserem System nicht vollumfänglich möglich. Einige Komponenten wie beispielsweise model.py, erwarten eine bestimmte Vorverarbeitung der Pipeline aus pipeline.py. Werden hier grundlegende Änderungen vorgenomme, müsste model.py ebenfalls angepasst werden. 
 Trotzdem hat auch die monolitische Architektur wichtige Vorteil gegenüber einem modularen Aufbau bzw. Microservices. Durch eine monolitische Architektur ist es möglich die Software leichter zu testen, als auch zu debuggen.</p>
 
-<h2 id="dokumentation-des-systems">
-<a class="anchor" href="#dokumentation-des-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dokumentation des Systems</h2>
+<h3 id="dokumentation-des-systems">
+<a class="anchor" href="#dokumentation-des-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dokumentation des Systems</h3>
 
-<p>Die <a href="%5Bhttps://dalibor.mitic.pages.web.fh-kufstein.ac.at/se2_project/src/%5D">Dokumentation</a> wurde mithilfe von Pdoc erstellt. Dabei werden sämtliche Docstring, welche in den verschiedenen Skripten verwendet wurden, zu einer HTML-Datei zusammengefügt und über GitLab Pages bereitgestellt.</p>
+<p>Die <a href="https://dalibor.mitic.pages.web.fh-kufstein.ac.at/se2_project/src">Dokumentation</a> wurde mithilfe von Pdoc erstellt. Dabei werden sämtliche Docstring, welche in den verschiedenen Skripten verwendet wurden, zu einer HTML-Datei zusammengefügt und über GitLab Pages bereitgestellt.</p>
 
   </div><a class="u-url" href="/SE_2_Portfolio/markdown/2022/06/24/05architektur.html" hidden></a>
 </article>
