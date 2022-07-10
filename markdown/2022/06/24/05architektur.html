@@ -98,15 +98,15 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#projekt-architektur">Projekt-Architektur</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#monolitische-architekur">Monolitische Architekur</a></li>
+<li class="toc-entry toc-h3"><a href="#monolitische-architektur">Monolitische Architektur</a></li>
 <li class="toc-entry toc-h3"><a href="#dokumentation-des-systems">Dokumentation des Systems</a></li>
 </ul>
 </li>
 </ul><h2 id="projekt-architektur">
 <a class="anchor" href="#projekt-architektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projekt-Architektur</h2>
 <hr>
-<h3 id="monolitische-architekur">
-<a class="anchor" href="#monolitische-architekur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monolitische Architekur</h3>
+<h3 id="monolitische-architektur">
+<a class="anchor" href="#monolitische-architektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Monolitische Architektur</h3>
 
 <p>Innerhalb des Projekts Frunch Infinity wird größtenteils eine monolytische Architektur verwendet. Prinzipiell ist das System mit diversen Komponenten, wie beispielsweise der processing.py, model.py und ui.py miteinander verbunden, voneinander abhängig und nicht, wie in modularen Systemen, lose gekoppelt.
 Der Vorteil modularer Systeme im Gegensatz zu einem Monolithen ist, dass einzelne Module losgelöst voneinander verändert werden können. Dies ist in unserem System nicht vollumfänglich möglich. Einige Komponenten wie beispielsweise model.py, erwarten eine bestimmte Vorverarbeitung der Pipeline aus pipeline.py. Werden hier grundlegende Änderungen vorgenomme, müsste model.py ebenfalls angepasst werden. 
