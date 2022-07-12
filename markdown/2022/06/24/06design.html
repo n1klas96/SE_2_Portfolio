@@ -132,7 +132,7 @@ Der größte Nachteil des Dashboards ist derzeit, dass das Modell-Training mit P
   <li>CI/CD Pipeline</li>
 </ul>
 
-<p>Des weiteren haben wir eine Pipeline für CI/CD (.gitlab-ci.yaml) aufgesetzt, die zwei verschiendene Stages hat. In der test Stage haben wir zum einen den test-job implementiert, welcher die dependencies mit Poetry installiert. Im Pages-job wird neben den dependencies auch die Dokumentation mittels PDOC erstellt. Innerhalb der build stage wird abschließend die Applikation in einem docker container aufgebaut.</p>
+<p>Des weiteren haben wir eine Pipeline für CI/CD (.gitlab-ci.yaml) aufgesetzt, die zwei verschiendene Stages hat. In der test Stage haben wir zum einen den test-job implementiert, welcher die Unit-tests durchführt. Im Pages-job, welcher parallel läuft, wird neben den dependencies auch die Dokumentation mittels PDOC erstellt. Innerhalb der build stage wird ein Image vom Docker-File erstellt, dieses wird auf GitLab gespeichert und bei einem Release würde dann (wenn es eine deploy stage gäbe) die Applikation in einem docker container aufgebaut.</p>
 
 <ul>
   <li>Model Performance</li>
@@ -140,7 +140,7 @@ Der größte Nachteil des Dashboards ist derzeit, dass das Modell-Training mit P
 
 <p>Wird das ML-Modell in der Streamlit-Applikation zum Re-Training getriggert, erscheint auf der UI ein Spinner, welcher eine sogenannte queue für ML-Jobs bereitstellt. Sobald das Training beendet ist, bekommt der User eine Benachrichtigung, dass die Trainingsresultate nun via Klick auf den “Letzte Trainingsergebnisse anzeigen” Button verfügbar sind. Dies verhindert zwar nicht die lange Wartezeit, verhindert allerdings, das der User die Seite verlässt und vermutet das die Applikation Fehler aufweist.</p>
 
-<p>Zu der Data Science Architektur des Projekts kann abschließend gesagt werden, dass der CRISP-DM Zyklus in Verbiundung mit kontinuierlicher Evaluation, Retraining und Monitoring sehr gut passt. Allerdings muss das Segment des Monitoring deutlich stärker eingebunden werden um beispielsweise die Performance des Retrainings zu senken.</p>
+<p>Zu der Data Science Architektur des Projekts kann abschließend gesagt werden, dass der CRISP-DM Zyklus in Verbindung mit kontinuierlicher Evaluation, Retraining und Monitoring recht gut passt. Allerdings muss das Segment des Monitoring deutlich stärker eingebunden werden um beispielsweise die Performance des Retrainings zu senken.</p>
 
 <p><img src="/SE_2_Portfolio/images/architecture.drawio.png" alt="" title="Data Science Architektur"></p>
 
